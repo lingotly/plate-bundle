@@ -10,7 +10,7 @@ import {
   VideoPlugin,
 } from '@udecode/plate-media/react';
 
-import { ImagePreview } from '@/components/plate-ui/image-preview';
+import { ImagePreview } from '@/registry/default/plate-ui/image-preview';
 
 export const mediaPlugins = [
   PlaceholderPlugin,

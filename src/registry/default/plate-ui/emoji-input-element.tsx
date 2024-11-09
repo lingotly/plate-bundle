@@ -5,7 +5,7 @@ import React, { useMemo, useState } from 'react';
 import { withRef } from '@udecode/cn';
 import { EmojiInlineIndexSearch, insertEmoji } from '@udecode/plate-emoji';
 
-import { useDebounce } from '@/hooks/use-debounce';
+import { useDebounce } from '@/registry/default/hooks/use-debounce';
 
 import {
   InlineCombobox,

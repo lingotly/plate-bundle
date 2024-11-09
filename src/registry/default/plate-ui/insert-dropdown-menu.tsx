@@ -48,7 +48,7 @@ import {
 import {
   insertBlock,
   insertInlineElement,
-} from '@/components/editor/transforms';
+} from '@/registry/default/components/editor/transforms';
 
 import {
   DropdownMenu,

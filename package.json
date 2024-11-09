@@ -1,6 +1,16 @@
 {
   "name": "@lingotly/plate-bundle",
-  "version": "1.0.0",
+  "description": "Bundle with all default Plate editor components",
+  "private": false,
+  "author": "lingotly",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lingotly/plate-bundle"
+  },
+  "bugs": {
+    "url": "https://github.com/lingotly/plate-bundle"
+  },
+  "version": "1.0.1",
   "scripts": {
     "build": "next build",
     "start": "next start",
@@ -9,6 +19,8 @@
   },
   "dependencies": {
     "@ariakit/react": "^0.4.13",
+    "@faker-js/faker": "^9.2.0",
+    "@nanostores/react": "ai/react",
     "@radix-ui/react-avatar": "^1.1.1",
     "@radix-ui/react-checkbox": "^1.1.2",
     "@radix-ui/react-context-menu": "^2.2.2",
@@ -70,6 +82,7 @@
     "@udecode/plate-trailing-block": "^39.0.0",
     "cmdk": "^1.0.4",
     "lucide-react": "^0.456.0",
+    "next": "^15.0.3",
     "prismjs": "^1.29.0",
     "react": "^18.3.1",
     "react-day-picker": "^9.3.0",

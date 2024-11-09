@@ -10,3 +10,9 @@ bun i @lingotly/plate-bundle
 $ ncu -i
 $ ./sync-components.sh
 ```
+
+### Publish
+
+```
+$ npm publish --access public
+```

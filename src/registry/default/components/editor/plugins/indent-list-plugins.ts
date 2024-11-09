@@ -11,11 +11,11 @@ import { TogglePlugin } from '@udecode/plate-toggle/react';
 import {
   FireLiComponent,
   FireMarker,
-} from '@/components/plate-ui/indent-fire-marker';
+} from '@/registry/default/plate-ui/indent-fire-marker';
 import {
   TodoLi,
   TodoMarker,
-} from '@/components/plate-ui/indent-todo-marker';
+} from '@/registry/default/plate-ui/indent-todo-marker';
 
 export const indentListPlugins = [
   IndentPlugin.extend({

@@ -9,36 +9,38 @@ curl -Lo .tmp/main.zip https://github.com/udecode/plate/archive/refs/heads/main.
 mkdir .tmp/main
 unzip .tmp/main.zip -d .tmp/main
 
+# Init structure
+rm -rf src
+mkdir src
+mkdir src/registry
+mkdir src/registry/default
+
 # Copy all available components
-rm -rf src/components
-mkdir src/components
-mkdir src/components/plate-ui
-cp -r .tmp/main/plate-main/templates/plate-playground-template/src/components/plate-ui/* src/components/plate-ui
+mkdir src/registry/default/plate-ui
+cp -r .tmp/main/plate-main/apps/www/src/registry/default/plate-ui/* src/registry/default/plate-ui
 
-mkdir src/components/editor
-cp -r .tmp/main/plate-main/templates/plate-playground-template/src/components/editor/* src/components/editor
+mkdir src/registry/default/components
+mkdir src/registry/default/components/editor
+cp -r .tmp/main/plate-main/apps/www/src/registry/default/components/editor/* src/registry/default/components/editor
 
-rm -rf src/hooks
-mkdir src/hooks
-cp -r .tmp/main/plate-main/templates/plate-playground-template/src/hooks/* src/hooks
+mkdir src/registry/default/hooks
+cp -r .tmp/main/plate-main/apps/www/src/registry/default/hooks/* src/registry/default/hooks
 
 # Cleanup unwanted content
-rm src/components/plate-ui/ai-menu.tsx
-rm src/components/plate-ui/slash-input-element.tsx
-rm src/components/plate-ui/code-*.tsx
-rm src/components/plate-ui/calendar.tsx
-rm src/components/plate-ui/date-element.tsx
+rm src/registry/default/plate-ui/ai-menu.tsx
+rm src/registry/default/plate-ui/slash-input-element.tsx
+rm src/registry/default/plate-ui/code-*.tsx
+rm src/registry/default/plate-ui/calendar.tsx
+rm src/registry/default/plate-ui/date-element.tsx
 
-rm src/components/editor/use-chat.tsx
-rm src/components/editor/plate-editor.tsx
-rm src/components/editor/use-create-editor.tsx
+rm src/registry/default/components/editor/use-chat.tsx
 
-rm src/components/editor/plugins/ai-plugins.tsx
-rm src/components/editor/plugins/copilot-plugins.ts
-rm src/components/editor/plugins/editor-plugins.tsx
+rm src/registry/default/components/editor/plugins/ai-plugins.tsx
+rm src/registry/default/components/editor/plugins/copilot-plugins.ts
+rm src/registry/default/components/editor/plugins/editor-plugins.tsx
 
 # Fix sources
-sed -i 's/useEffect(() => {/useEffect(() => {\n    \/\/ @ts-ignore/' src/hooks/use-debounce.ts
+sed -i 's/useEffect(() => {/useEffect(() => {\n    \/\/ @ts-ignore/' src/registry/default/hooks/use-debounce.ts
 
 # Add changes to git
 git add src/.

@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 'use client';
 
 import React from 'react';
@@ -24,7 +25,7 @@ import {
 import { BlockSelectionPlugin } from '@udecode/plate-selection/react';
 import { GripVertical } from 'lucide-react';
 
-import { useMounted } from '@/hooks/use-mounted';
+import { useMounted } from '@/registry/default/hooks/use-mounted';
 
 import {
   Tooltip,
