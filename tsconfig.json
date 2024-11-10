@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    // General
+    "target": "ES5",
+
     // From Plate
     "strict": false,
     "strictNullChecks": true,
@@ -26,25 +29,19 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "jsx": "preserve",
     "module": "esnext",
-    "target": "es2022",
     "moduleResolution": "bundler",
     "moduleDetection": "force",
     "allowImportingTsExtensions": false,
     "resolveJsonModule": true,
     "noEmit": true,
     "incremental": true,
-    "declaration": false,
-    "declarationMap": false,
+    "declaration": true,
+    "declarationMap": true,
     "sourceMap": true,
     "pretty": true,
     "preserveWatchOutput": true,
 
     "tsBuildInfoFile": "tsconfig.tsbuildinfo",
-
-    "baseUrl": "src",
-    "paths": {
-      "@/*": ["./*"]
-    },
 
     // Other
 

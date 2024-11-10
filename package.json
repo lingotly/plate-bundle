@@ -10,11 +10,8 @@
   "bugs": {
     "url": "https://github.com/lingotly/plate-bundle"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
     "tslint": "tsc --noEmit"
   },
   "dependencies": {
