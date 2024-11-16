@@ -204,19 +204,21 @@ export const TableElement = withHOC(
       useTableElementState();
     const { colGroupProps, props: tableProps } = useTableElement();
 
-    return (
+      return (
       <TableFloatingToolbar>
-        <div className="overflow-x-auto" style={{ paddingLeft: marginLeft }}>
-          <PlateElement
+        <PlateElement
+          className={cn('overflow-x-auto', className)}
+          style={{ paddingLeft: marginLeft }}
+          {...props}
+        >
+          <table
+            // @ts-ignore
             ref={ref}
-            as="table"
             className={cn(
-              'my-4 ml-px mr-0 table h-px w-full table-fixed border-collapse',
-              isSelectingCell && '[&_*::selection]:bg-none',
-              className
+              'my-4 ml-px mr-0 table h-px w-[calc(100%-6px)] table-fixed border-collapse',
+              isSelectingCell && '[&_*::selection]:bg-none'
             )}
             {...tableProps}
-            {...props}
           >
             <colgroup {...colGroupProps}>
               {colSizes.map((width, index) => (
@@ -231,8 +233,8 @@ export const TableElement = withHOC(
             </colgroup>
 
             <tbody className="min-w-full">{children}</tbody>
-          </PlateElement>
-        </div>
+          </table>
+        </PlateElement>
       </TableFloatingToolbar>
     );
   })
