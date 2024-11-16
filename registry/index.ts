@@ -25,7 +25,7 @@ export {withPlaceholders} from "./default/plate-ui/placeholder";
 export {withDraggables} from "./default/plate-ui/with-draggables";
 export {FixedToolbar} from "./default/plate-ui/fixed-toolbar";
 export {FixedToolbarButtons} from "./default/plate-ui/fixed-toolbar-buttons";
-export {Editor} from "./default/plate-ui/editor";
+export {Editor, EditorContainer} from "./default/plate-ui/editor";
 export {FloatingToolbar} from "./default/plate-ui/floating-toolbar";
 export {FloatingToolbarButtons} from "./default/plate-ui/floating-toolbar-buttons";
 export {TooltipProvider} from "./default/plate-ui/tooltip";
