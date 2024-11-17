@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/lingotly/plate-bundle"
   },
-  "version": "1.0.14",
+  "version": "1.0.15",
   "main": "./dist/index.js",
   "types": "./dist/types/index.d.ts",
   "files": [
