@@ -1,5 +1,6 @@
 export {PlateElement} from "./default/plate-ui/plate-element";
 
+export {ToolbarButton} from './default/plate-ui/toolbar'
 export {LinkFloatingToolbar} from "./default/plate-ui/link-floating-toolbar";
 export {KbdLeaf} from "./default/plate-ui/kbd-leaf";
 export {HighlightLeaf} from "./default/plate-ui/highlight-leaf";
