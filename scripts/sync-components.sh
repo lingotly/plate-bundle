@@ -17,9 +17,13 @@ mkdir registry/default
 mkdir registry/default/plate-ui
 cp -r .tmp/main/plate-main/apps/www/src/registry/default/plate-ui/* registry/default/plate-ui
 
+# Copy all available libs
+#mkdir registry/default/lib
+#cp -r .tmp/main/plate-main/apps/www/src/registry/default/lib/* registry/default/lib
+
 mkdir registry/default/components
 mkdir registry/default/components/editor
-cp .tmp/main/plate-main/apps/www/src/registry/default/components/editor/* registry/default/components/editor
+cp -r .tmp/main/plate-main/apps/www/src/registry/default/components/editor/* registry/default/components/editor
 
 mkdir registry/default/hooks
 cp -r .tmp/main/plate-main/apps/www/src/registry/default/hooks/* registry/default/hooks
@@ -30,8 +34,30 @@ rm registry/default/plate-ui/slash-input-element.tsx
 rm registry/default/plate-ui/code-*.tsx
 rm registry/default/plate-ui/calendar.tsx
 rm registry/default/plate-ui/date-element.tsx
+rm registry/default/plate-ui/export-toolbar-button.tsx
+rm registry/default/plate-ui/fixed-toolbar-buttons.tsx
+rm registry/default/plate-ui/ai-chat-editor.tsx
+rm registry/default/plate-ui/fixed-toolbar-list-buttons.tsx
+rm registry/default/plate-ui/form.tsx
+rm registry/default/plate-ui/import-toolbar-button.tsx
+rm registry/default/plate-ui/select-editor.tsx
+rm registry/default/plate-ui/remote-cursor-overlay.tsx
+rm registry/default/plate-ui/media-placeholder-element.tsx
+rm registry/default/plate-ui/media-video-element.tsx
 
-rm registry/default/components/editor/use-chat.tsx
+rm registry/default/components/editor/settings.tsx
+rm registry/default/components/editor/use-chat.ts
+rm registry/default/components/editor/use-create-editor.ts
+rm registry/default/components/editor/use-create-editor-list.ts
+rm registry/default/components/editor/slate-to-html.tsx
+
+rm registry/default/components/editor/plugins/ai-plugins.tsx
+rm registry/default/components/editor/plugins/editor-plugins.tsx
+rm registry/default/components/editor/plugins/fixed-toolbar-plugin.tsx
+rm registry/default/components/editor/plugins/fixed-toolbar-list-plugin.tsx
+rm registry/default/components/editor/plugins/tabbable-plugin.ts
+rm registry/default/components/editor/plugins/soft-break-plugin.ts
+rm registry/default/components/editor/plugins/exit-break-plugin.ts
 
 #rm registry/default/components/editor/plugins/ai-plugins.tsx
 #rm registry/default/components/editor/plugins/copilot-plugins.ts
@@ -67,6 +93,8 @@ rm registry/default/components/editor/use-chat.tsx
 #sed -i "s/.\/media-toolbar-button'/.\/media-toolbar-button.js'/" registry/default/plate-ui/*
 #sed -i "s/.\/list-toolbar-button'/.\/list-toolbar-button.js'/" registry/default/plate-ui/*
 
+#sed -i 's/@\/registry\/default\/lib\//..\/lib\//' registry/default/plate-ui/*
+sed -i 's/@\/registry\/default\/plate-ui\//..\/..\/..\/plate-ui\//' registry/default/components/editor/plugins/*
 sed -i 's/@\/registry\/default\/hooks\//..\/hooks\//' registry/default/plate-ui/*
 sed -i 's/@\/registry\/default\/components\//..\/components\//' registry/default/plate-ui/*
 sed -i 's/export const CaptionTextarea = withCn/export const CaptionTextarea: typeof CaptionTextareaPrimitive = withCn/' registry/default/plate-ui/caption.tsx
