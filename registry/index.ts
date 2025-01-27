@@ -1,3 +1,5 @@
+export { createPlatePlugin } from '@udecode/plate/react';
+
 export {PlateElement} from "./default/plate-ui/plate-element";
 
 export {ToolbarButton} from './default/plate-ui/toolbar'

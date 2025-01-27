@@ -61,6 +61,7 @@ rm registry/default/components/editor/plugins/tabbable-plugin.ts
 rm registry/default/components/editor/plugins/soft-break-plugin.ts
 rm registry/default/components/editor/plugins/exit-break-plugin.ts
 rm registry/default/components/editor/plugins/media-plugins.tsx
+rm registry/default/components/editor/plugins/floating-toolbar-plugin.tsx
 
 #rm registry/default/components/editor/plugins/ai-plugins.tsx
 #rm registry/default/components/editor/plugins/copilot-plugins.ts
