@@ -43,7 +43,6 @@ export { InsertDropdownMenu } from './default/plate-ui/insert-dropdown-menu';
 export { LineHeightDropdownMenu } from './default/plate-ui/line-height-dropdown-menu';
 export { LinkToolbarButton } from './default/plate-ui/link-toolbar-button';
 export { MarkToolbarButton } from './default/plate-ui/mark-toolbar-button';
-export { MediaToolbarButton } from './default/plate-ui/media-toolbar-button';
 export { ModeDropdownMenu } from './default/plate-ui/mode-dropdown-menu';
 export { MoreDropdownMenu } from './default/plate-ui/more-dropdown-menu';
 export { OutdentToolbarButton } from './default/plate-ui/outdent-toolbar-button';

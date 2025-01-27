@@ -44,6 +44,8 @@ rm registry/default/plate-ui/select-editor.tsx
 rm registry/default/plate-ui/remote-cursor-overlay.tsx
 rm registry/default/plate-ui/media-placeholder-element.tsx
 rm registry/default/plate-ui/media-video-element.tsx
+rm registry/default/plate-ui/media-upload-toast.tsx
+rm registry/default/plate-ui/media-toolbar-button.tsx
 
 rm registry/default/components/editor/settings.tsx
 rm registry/default/components/editor/use-chat.ts
@@ -58,6 +60,7 @@ rm registry/default/components/editor/plugins/fixed-toolbar-list-plugin.tsx
 rm registry/default/components/editor/plugins/tabbable-plugin.ts
 rm registry/default/components/editor/plugins/soft-break-plugin.ts
 rm registry/default/components/editor/plugins/exit-break-plugin.ts
+rm registry/default/components/editor/plugins/media-plugins.tsx
 
 #rm registry/default/components/editor/plugins/ai-plugins.tsx
 #rm registry/default/components/editor/plugins/copilot-plugins.ts
